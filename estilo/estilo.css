@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-boton{
+    display: none;
+}
+
+.logo{
+    display: none;
+}
+
+.nav-ancla{
+    font-weight: bolder;
+    color: black;
+    background: #dab901;
+    padding: 10px 30px;
+    margin: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    line-height: 3;
+    
+}
+
+.nav-ancla:hover{
+    background-color: gray;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4) ; 
+    transition: .2s;
+
+}
+
+@media (max-width: 768px) {
+    .grid-conteiner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+}
+
+
+/*Index, ALGUNAS PAGINAS COMPARTEN CLASES PARA RESUMIR CODIGOS */
+
+.parrafo-index{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.conocenos {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+/*productos*/
+
+.parrafo-section h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 5;
+}
+
+.parrafo-section p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 5;
+}
+
+/*Galeria*/
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    line-height: 3;
+    font-weight: bolder;
+}
+
+.parrafo-galeria{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 3;
+}
+
+img{
+    width: 100%;
+}
+
+.grid-item {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    border: solid 1px rgba(218,185,1,.9);
+    object-fit: cover;
+}
+
+
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-conteiner{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(600px, auto);
+    gap: 25px;
+    padding: 25px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/*Productos*/
+
+.productos{
+    display: flex;
+    padding: 5px;
+}
+
+.productos img{
+    width: 650px;
+    height: 650px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+
+/*Nosotros*/
+
+.video-promo{
+    text-align: center;
+
+}
+
+
+
+/* contactanos, formulario */
+
+h3{
+    font-size: 30px;
+    color: white;
+    text-align: end;
+    font-weight: bolder;
+    padding: 100px;
+}
+
+.section-form{
+    color: white;
+    padding: 50px 15px;
+}
+.content{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.form{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(223, 191, 9, 0.979); 
+} 
+
+.contact-wrapper > * {
+    padding: 100px;
+}
+
+.contact-form{
+    background-color: #222222;
+}
+
+.p-form{
+    margin: 35px;
+}
+
+h4{
+    text-align: center;
+    font-size: bolder;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.contact-info{
+    background-color: black;
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 15px;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #222222;
+    outline: 0;
+    border-bottom: 1px solid #dab901;
+    color: white;
+}
+
+.contact-form form button{
+    background-color: #dab901;
+    color: black;
+    border: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background-color: #333;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/*footer, todas las paginas  */
+
+footer{
+    background-color: #dab901;
+    color: black;
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram:  #e4405f;
+    --whatsapp: #00c347;
+
+}
+
+.redes-container{
+    display: flex;
+    height:  10vh;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+    border-radius: 15px;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4) ; 
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+
+.pie-p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
